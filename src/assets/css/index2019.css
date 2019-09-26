@@ -1,0 +1,823 @@
+html{margin:0;padding:0;border:0;font-size:12px;font-weight:400}
+body{overflow-x:hidden;background:#f3f3f4;}
+*{font-family:'Source Han Sans CN','Hiragino Sans GB','microsoft yahei',arial,sans-serif;}
+blockquote,body,button,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,img,input,legend,li,ol,p,pre,s,span,td,textarea,th,ul{margin:0;padding:0}
+table{border-collapse:separate;border-spacing:0}
+img{border:none;vertical-align:middle}
+button,label{cursor:pointer}
+s{text-decoration:none}
+em,i{font-style:normal}
+:focus{outline:0;*blr:expression(this.onFocus=this.blur())}
+.pr{position:relative}
+.pa{position:absolute}
+.hide,.undis{display:none}
+.clr{clear:both}
+label{_cursor:auto!important}
+a{color:#222;*blr:expression(this.onFocus=this.blur())}
+a,a:hover{text-decoration:none}
+a:active,a:hover{color:#d94536}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+h1,h2,h3,h4,h5,h6{color:#282828;font-weight:400}
+ol,ul{list-style-type:none}
+dl dt{font-weight:400}
+.toolbarBox{height:30px;background:#e9eaec;}
+.toolbarCon{width:1190px;margin:0 auto;height:30px;}
+.toolbarLeft{float:left;line-height:30px;font-size:12px;}
+.toolbarLeft a.login{float:left;margin-left:38px;line-height:30px;margin-right:30px;color:#2e2e2e;}
+.login-status{display:none;}
+.topReg{float:left;line-height:30px;height:30px;position:relative;}
+.topReg a.reg{color:#d94536;display:block;height:30px;}
+.toolbarBox .regAlert{height:22px;position:absolute;left:30px;top: 27px;padding:0 28px 0 18px;background: #d94536;white-space: nowrap;border-radius: 30px;}
+.toolbarBox .regAlert a{display:block;line-height: 22px;color:#fff;text-align:center;}
+.toolbarBox .userName{float:left;color:#2e2e2e;}
+.toolbarBox .exit{float:left;margin-left:30px;color:#d94536;}
+.toolbarBox .newsBtn{margin-left:30px;color:#2e2e2e;padding-right:30px;position:relative;display:block;height:30px;float:left;}
+.toolbarBox .newsBtn span{display:inline-block;position:absolute;top:9px;right: auto;left: 28px;color:#fff;height:12px;padding:0 5px;border-radius:5px;background:#d94536;line-height:12px;}
+.toolbarRig{float:right;}
+.toolbarRig li{float:left;position:relative;z-index:1212;}
+.navTitle,.purchaselist{padding:0 0 0 24px;line-height:30px;position:relative;height:30px;}
+.navTitle a{display:block;height:30px;padding-right:15px;background:url(https://style.org.hc360.com/images/Nindex/news2019/toolbarArrow.png) 51px 2px no-repeat;}
+.navCon{position:absolute;top:30px;padding:20px 15px 5px;background:#fff;box-shadow:0 0 10px #dddde1;left:-20px;display:none;}
+.navCon.w225{width:225px;}
+.navCon.w180{width:180px;}
+.navCon dd h3{font-size:14px;color:#282828;line-height:30px;}
+.navCon dd a{display:block;float:left;font-size:12px;color:#959595;line-height:26px;margin-right:12px;}
+.navCon dd{padding-bottom:10px;overflow:hidden;margin-bottom:10px;border-bottom:1px solid #e9eaec;}
+.navCon em{display:block;position:absolute;top:-5px;left:60px;background:url(https://style.org.hc360.com/images/Nindex/news2019/icon.png) 0 -223px;width:13px;height:6px;}
+.purchaselist a{line-height:30px;color:#d94536;padding-right:22px;position:relative;display:block;height:30px;float:left;}
+.purchaselist a span{display:inline-block;position:absolute;top:9px;left:40px;color:#fff;height:12px;padding:0 5px;border-radius:5px;background:#d94536;line-height:12px;}
+.navCon.kf{width:94px;padding:20px 0;text-align:center;left:3px;}
+.navCon.kf em{left:40px}
+.navCon.kf dd{border:0;text-align:center;padding:0;margin:0;}
+.navCon.kf dd a{display:block;float:none;margin:0;line-height:30px;font-size:14px;color:#282828;}
+.navCon dd a:hover,.toolbarLeft a:hover{color:#d94536;}
+.navCon.siteMap{width:480px;right:-87px;left:auto;}
+.navCon.siteMap em{right:119px;left:auto;}
+.navCon.siteMap h3{float:left;width:88px;display:block;}
+.navCon.siteMap .sitemapLink{float:left;width:390px;padding-bottom:15px;border-bottom:1px solid #e9eaec;}
+.navCon.siteMap dd{padding:0;margin-bottom:15px;}
+.navCon.iphone{width:370px;left:auto;right:0;}
+.navCon.iphone dd{float:left;width:72px;margin:0 10px;padding:0;}
+.navCon.iphone dd .navCodeImg{border:1px solid #e9eaec;}
+.navCon.iphone dd p{color:#282828;text-align:center;padding:10px 0 5px;font-size:12px;}
+.navCon.iphone em{left:auto;right:30px;}
+.unitBox ul{position:absolute;top:38px;left:-1px;background:#f3f3f4;line-height:24px;color:#959595;display:none;width:72px;}
+.unitBox ul li{height:28px;padding:0 8px;width:56px;cursor:pointer;}
+.unitBox ul li:hover{background:#e9eaec;}
+.navCon.siteMap dd,.navCon.iphone dd{border-bottom:0;}
+.navCon.siteMap dd:last-child .sitemapLink,.navCon.w180 dd:last-child,.navCon.w225 dd:last-child{border-bottom:0;}
+.w1190{width:1190px;margin:auto;}
+.adImg1,.adImg2{height:80px;width:100%;position:relative;overflow:hidden;}
+.headerBox{height:88px;}
+.headerCon{width:1190px;margin:0 auto;}
+.logo{float:left;padding:20px 0 20px 25px;width:165px;}
+.logo a{display:block;height:48px;width:140px;background-image:url(https://style.org.hc360.com/images/Nindex/news2019/logo140x48.png);background-image:url(https://style.org.hc360.com/images/logo/logo191x65.svg), none;background-repeat:no-repeat;background-size:140px 48px;}
+.headerRigBtn{float:right;padding-top:30px;}
+.headerRigBtn a{display:block;float:left;width:140px;height:30px;line-height:30px;background:#e9eaec;font-size:14px;border-radius:40px;color:#282828;margin-left:10px;text-align:center;transition:.3s;}
+.h_search{float:left;width:600px;padding:24px 0 0 60px;overflow:visible;height:40px;}
+.h_search ul li span,.totalnum span{color:#999;float:right;}
+.logo_search{width:600px;height:40px;clear:both;overflow:visible;position:relative;z-index:1211;}
+.logo_search_l{float:left;width:498px;height:36px;_height:34px;border:2px solid #d94536;border-right:none;position:absolute;z-index:400;top:0;bottom:0;left:0;}
+.logo_search_l .searchdetail{position:absolute;left:108px;top:9px;color:#6d6d6e;font-size:12px;cursor:default!important;}
+.logo_search_l .txt_key{height:32px;line-height:32px;*line-height:28px;*height:28px;width:389px;*width:515px;color:#333;border:none;*border:1px solid #fff;background:none;font-size:12px;float:left;margin-left:88px;padding-left:20px;margin-top:2px;border-left:1px solid #a2a2a2;}
+.SearchWrap{float:left;margin-right:10px;_margin-right:6px;height:40px;position:relative;z-index:1211;overflow:visible;width:600px;}
+.SearchWrap button{border:none;float:left;text-align:center;font-size:14px}
+.SearchWrap .SearBtn{background:url(https://style.org.hc360.com/images/Nindex/news2019/searchIcon.png) #d94536;width:100px;height:100%;line-height:40px;color:#fff;position:absolute;top:0;right:0;bottom:0;}
+.SearchWrap .SearBtn:hover{background:url(https://style.org.hc360.com/images/Nindex/news2019/searchIcon.png) #dd574b;}
+.SearchWrap .commdBtn{background:#f9f9f9;width:98px;height:38px;border:1px solid #dcdcdc;color:#666;line-height:36px}
+.SearchWrap_cont{display:none;position:absolute;left:88px;top:38px;width:410px;background:#fff;z-index:400;border-top:none;_height:expression((document.documentElement.clientHeight||document.body.clientHeight)<320?"320px":"");}
+.SearchWrap_cont ul{height:auto;overflow:hidden;padding:10px 0 5px;}
+.SearchWrap_cont ul li,.totalnum{line-height:28px;height:28px;padding:0 20px;color:#666;cursor:pointer;}
+.SearchWrap_cont ul li.listCur{background:#f5f5f5}
+.SearchWrap_cont ul li a:link,.SearchWrap_cont ul li a:visited,.totalnum a:link,.totalnum a:visited{color:#999}
+.SearchWrap_cont ul li a:hover{color:#d11120}
+.SearchWrap_cont ul li a{height:28px;}
+.SearchWrap_cont .lilast{border-top:1px solid #e9eaec;text-align:center;color:#282828;cursor:auto;height:40px;line-height:40px;margin:0 20px;}
+ul li.bwlist{cursor:auto;height:auto;text-indent:0;width:auto;color:#333;padding:0 13px;}
+ul.cgListContent li:hover{background:#e8e8e8;}
+ul li .b_title{padding-left:10px;background:#f5f5f5}
+ul li.bwlist dl{padding:10px 0 0;overflow:hidden;}
+ul li.bwlist dl dd{float:left;margin:0 3px 10px;display:inline-block;}
+li.bwlist dl dd .picbox{width:88px;height:88px;overflow:hidden;border:1px solid #ececee;}
+li.bwlist dl dd .picbox a{display:table-cell;vertical-align:middle;text-align:center;overflow:hidden;width:88px;height:88px;}
+.SearchWrap_cont li.bwlist dl dd a{color:#282828;}
+li.bwlist dl dd .pay{color:#d94536;line-height:12px;}
+li.bwlist dl dd .txtil{width:90px;-o-text-overflow:ellipsis;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;height:12px;line-height:12px;margin:10px 0;}
+li.bwlist dl dd a:hover{color:#d94536;}
+li.bwlist dl dd .picbox img{max-height:88px;max-width:88px;}
+.searchSele{height:36px;width:88px;float:left;left:2px;top:2px;z-index:500;position:absolute;}
+.searchSele p{height:36px;line-height:36px;padding-right:16px;color:#2e2e2e;text-align:center;font-size:14px;}
+.searchSele em{display:block;height:36px;width:32px;position:absolute;top:0;right:0;background:url(https://style.org.hc360.com/images/Nindex/news2019/icon.png) 5px -79px no-repeat;}
+.searchSele.seleShow em{background:url(https://style.org.hc360.com/images/Nindex/news2019/icon.png) -31px -108px no-repeat;}
+.searchSele.seleShow ul{display:block}
+.searchSele ul{position:absolute;top:38px;border-radius:0 0 3px 3px;background:#fff;line-height:30px;width:90px;left:-2px;border-top:0;display:none;padding:5px 0;box-shadow:0 0 10px #cdcdd0;}
+.searchSele li{height:30px;padding-left:26px;color:#282828;cursor:pointer;font-size:14px;}
+.searchSele li.seleCur,.searchSele li:hover{color:#d94536;margin:0;background:#e8e8e8;}
+.h_search .SearchWrap_record{position:absolute;left:88px;top:38px;width:370px;padding:10px 20px 25px;background:#fff;z-index:400;box-shadow:0 0 10px #dddde1;display:none;_height:expression((document.documentElement.clientHeight||document.body.clientHeight)<320?"320px":"");}
+.SearchWrap_record .history_title{color:#959595;font-size:14px;height:18px;line-height:18px;margin:13px 0 17px;}
+.history_word{clear:both;overflow:hidden;border-bottom:1px solid #e9eaec;padding-bottom:6px;}
+.history_word li{float:left;text-align:center;line-height:30px;margin:0 10px 10px 0;display:block;border-radius:30px;}
+.history_word li a{color:#d94536;padding:0 20px;text-indent:0;display:block;text-align:left;background:#e9eaec;border-radius:30px;}
+.SearchWrap_record .hotSearch_tt{clear:both;color:#959595;font-size:14px;height:18px;line-height:18px;padding-top:20px;}
+.hotSearch_word{clear:both;padding:12px 0 0 0;overflow:hidden;white-space:nowrap;line-height:22px;}
+.hotSearch_word li{float:left;margin-right:20px;line-height:22px;text-indent:0}
+.hotSearch_word li a{color:#282828;}
+.hotSearch_word li a:hover{text-decoration:none;color:#d94536;}
+.hotSearch{width:102%;overflow:hidden;line-height:26px;}
+.seleCon{cursor:pointer;}
+.navwrap{overflow:hidden;height:38px;clear:both;}
+.navwrap .nav_main{width:1190px;margin:0 auto;}
+.nav_main ul{width:105%;}
+.nav_main li.title{background-color:#d94536;color:#fff;width:190px;padding:0;font-size:14px;height:38px;line-height:38px;}
+.nav_main li.title em{width:20px;height:15px;margin:0 15px;background:url(https://style.org.hc360.com/images/Nindex/news2017/indexIco.png) 1px -209px;display:inline-block;vertical-align:middle}
+.nav_main li{float:left;padding:0 10px;color:#fff;position:relative;z-index:1210;line-height:38px;}
+.nav_main li a{position:relative;margin:0 18px;color:#282828;font-size:16px;display:block;float:left;line-height:36px;padding-bottom:1px;}
+.nav_main li a em{position:absolute;bottom:6px;right:-15px;display:block;height:5px;width:7px;background:url(https://style.org.hc360.com/images/Nindex/news2018/index2018ico.png) -170px -522px no-repeat}
+.nav_main li a:hover{text-decoration:none;color:#d94536!important}
+.nav_main li span{height:14px;display:block;width:2px;background:#d94536;margin-top:12px;}
+.nav_main li.line{padding:0;}
+.navgationBox{height:500px;background:#e8e8e8;position:relative;}
+.navgationCon{/* overflow:hidden;*/margin:0 auto;width:1190px;height:500px;}
+.H_Bside_cont{width:190px;height:auto;background:#f9f9f9;border-top:none;float:left;position:absolute;z-index:220;top:0;left:50%;margin-left:-595px;}
+.Bside_Uwrap li.btmNodes{height:32px}
+.Bside_Uwrap li.btmNodes a{line-height:34px!important;height:34px}
+.Bside_Uwrap li.btmNodes a s{margin-top:8px}
+.Bside_Uwrap li.Navitem_active{background:#e5e5e5 url("https://style.org.hc360.com/images/Nindex/news2015/indexpic.png") no-repeat 184px -230px}
+.Bside_Uwrap li.Navitem_active s{background-position:-385px 1px!important}
+.Bside_Uwrap li a{height:26px;line-height:26px;overflow:hidden;float:left;margin:0 5px;}
+.Bside_Uwrap li a:hover{text-decoration:none!important}
+.H_Bside_UList{z-index:121;position:relative;background:#e9e8ed;padding:7px 0;/* -webkit-box-shadow:0 0 12px #ddd;*/-moz-box-shadow:0 0 12px #ddd;/* box-shadow:0 0 12px #ddd;*/}
+.H_Bside_UList ul li{position:relative;height:26px;font-size:14px;margin-bottom:1px;padding-left:10px;}
+.H_Bside_UList ul li .rigNav_cont{width:180px;}
+.Bside_Uwrap li.Navitem_hover span{color:#fff !important;}
+.Bside_Uwrap li.Navitem_hover em{height:30px}
+.Bside_Uwrap li a:link,.Bside_Uwrap li a:visited{color:#282828;font-size:14px;}
+.Bside_Uwrap li.Navitem_hover{background:#d94536;color:#fff!important}
+.Bside_Uwrap li.Navitem_hover a:link,.Bside_Uwrap li.Navitem_hover a:visited{color:#fff;text-decoration:none}
+.Bside_Uwrap li.Navitem_hover a:hover{color:#fff!important;text-decoration:underline}
+.item_Vlist{position:absolute;left:189px;top:0;z-index:40}
+.H_sideBar_list{height:492px;padding-top:8px;background:url(https://style.org.hc360.com/images/Nindex/news2017/navLeftBg.png) repeat-y #fff;width:781px;position:absolute;left:0;top:0;z-index:501;padding-left:20px;box-shadow:0 0 15px #d8d8d9;display:none;}
+.sideBarLeft{width:618px;overflow:hidden;float:left;}
+.sideBarLeft h3{font-size:18px;color:#d94536;padding:15px 0 5px}
+.sideBarLeft ul{overflow:hidden}
+.sideBarLeft ul li{overflow:hidden;line-height: 20px;margin: 2px 0;}
+.sideBarLeft span.sideBarLeftTit{display:block;float:left;width:98px;white-space:nowrap;text-align:left;font-size:14px;color:#282828;padding-top: 10px;line-height: 22px;}
+.sideBarLeft .sideBarLinkBox{display:block;float:left;width:510px;overflow:hidden;line-height: 22px;padding-bottom:6px;border-top:1px solid #e9eaec;padding-top: 8px;}
+.sideBarLeft .sideBarLinkBox a:hover{color:#d94536}
+.sideBarLeft .sideBarLinkBox a{margin-right:11px;color:#959595;display:block;float:left;}
+.sideBarLeft .sideBarLinkBox a.redColor{}
+.sideBarRig{float:left;padding:30px 0 0 15px;width:137px;}
+.sideBarRig h3{line-height:28px;font-size:16px;color:#d94536;padding:15px 0 12px;text-align:center;display:none}
+.sideBarRig ul li{width:128px;height:58px;margin-bottom:14px;}
+.sideBarRig ul li a{display:block;border:1px solid #ddd;height:135px;height:60px;margin-bottom:10px;overflow:hidden}
+.sideBarRig ul li a:hover{border:1px solid #d94536}
+.H_Bside_UList ul li .rigNav_cont span{color:#282828;float:left;line-height:26px;}
+.banner_mod{position:absolute;left:0;width:100%;height:500px;}
+.scrollPic{overflow:hidden;height:500px;width:100%;margin-bottom:10px;position:relative;}
+.banneModBot{height:125px;position:absolute;top:365px;left:50%;margin-left:-395px;z-index:6;}
+.banneModBot .activityImg{float:left;width:190px;height:125px;margin-right:10px;background: #fff;}
+.H_Rgiht{float:right;width:190px;position:absolute;left:50%;margin-left:405px;top:0;z-index:121;}
+.H_RigTop{background:#fff;height:252px;padding-top:12px;border-bottom:1px solid #eae9ee;}
+.welcomeNode{background:url(https://style.org.hc360.com/images/Nindex/news2019/rigTopImg.png) center center no-repeat;height:46px;}
+.H_RigTop p{padding:5px 20px 0;}
+.H_RigTop p a{display:block;line-height:20px;color:#fe8400;font-size:12px;}
+.loginAfter,.loginBefore{padding-top:16px;}
+.loginAfter a,.loginBefore a{display:block;width:140px;height:30px;line-height:30px;font-size:14px;border-radius:30px;margin:0 auto 8px;text-align:center;transition:.3s;}
+.loginBefore a.loginBtn,.loginAfter a.releaseBtn{background:#d94536;color:#fff;}
+.loginBefore a.regBtn,.loginAfter a.manageBtn{color:#282828;background:#e9eaec;}
+.loginAfter a.manageBtn,.loginBefore a.regBtn{color:#282828;background:#e9eaec;border: 1px solid #d94536;height: 28px;line-height: 28px;background: #fff;width: 138px;color: #d94536;}
+.loginAfter a.manageBtn:hover,.loginBefore a.regBtn:hover{background:#fbeceb;color:#d94536;}
+.rigService{overflow:hidden;padding:13px 5px 0;}
+.rigService li{float:left;width:33.333%;text-align:center;}
+.rigService li a{display:block;padding-bottom:8px;}
+.rigService li em{display:block;margin:0 auto;width:40px;height:40px;background:url(https://style.org.hc360.com/images/Nindex/news2019/icon.png) no-repeat;}
+.rigService li em.serIcon1{background-position:4px -32px;}
+.rigService li em.serIcon2{background-position:-36px -33px;}
+.rigService li em.serIcon3{background-position:-80px -33px;}
+.rigService li a span{color:#fff;font-size:12px;color:#282828;display:block;margin-top:4px;}
+.rigService li a{display:block;-webkit-transition:all .3s ease;-moz-transition:all .3s ease;transition:all .3s ease}
+.rigService li a:hover{margin-top:-4px}
+.loginBefore a.loginBtn:hover,.loginAfter a.releaseBtn:hover{background:#dd574b;}
+.H_RigBot{background:#ebeaef;height:235px;}
+.H_RigBotTit{padding:18px 5px;overflow:hidden;}
+.H_RigBotTit li{width:60px;float:left;text-align:center;color:#282828;height:24px;border-radius:50px;font-size:12px;line-height:24px;cursor:pointer;}
+.H_RigBotTit li.titCur,.H_RigBotTit li:hover{color:#fff;background:#d94536;}
+.H_RigBotTCon{padding:0 10px;}
+.rigSeleCon{height:32px;width:168px;position:relative;margin-bottom:10px;}
+.rigSeleCon input{height:32px;border:0;background:none;width:158px;padding-left:10px;color: #282828;line-height:32px;border:1px solid #d7d6db;transition:.5s;font-size:12px;}
+.rigSeleCon em{display:block;position:absolute;right:0;top:1px;height:32px;width:24px;background:url(https://style.org.hc360.com/images/Nindex/news2019/icon.png) 3px -109px no-repeat #ebeaef;cursor:pointer;}
+.H_RigBotTCon button{width:140px;height:30px;border-radius:30px;background:#959595;color:#fff;border:0;margin:5px 15px 12px;line-height:30px;transition:.3s;}
+.H_RigBotTCon button:hover{background:#d94537;color:#fff;}
+.H_RigBotTCon p{text-align:center;font-size:12px;color:#282828;}
+.mad_bx{width:100%;height:500%;}
+.mad_bx li{width:100%;height:500px;}
+.Snumb{position:absolute;bottom:158px;right:20px;left:0;height:18px;z-index:120;width:100%;text-align:center;}
+.Snumb li{display:inline-block;_display:inline;width:18px;height:18px;overflow:hidden;margin:2px 15px;background:url(https://style.org.hc360.com/images/Nindex/news2019/icon.png) -181px 0;cursor:pointer;border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px}
+.Snumb li.Scur,.Snumb li:hover{background:url(https://style.org.hc360.com/images/Nindex/news2019/icon.png) -200px 0;}
+.purchaseBox,.charMarketBox,.industryBox,.industryListBox{padding-top:30px;overflow:hidden;}
+.boxTitle{height:60px;line-height:60px;padding-left:10px;}
+.boxTitle h2,.boxTitle h2 a{font-size:24px;color:#282828;font-weight:bold;float:left;line-height:58px;width: auto;height: auto;background: none;padding-right: 0;}
+.boxTitle h2 a,.boxTitle h2 a:hover{margin:0 15px 0 0;color: #282828;opacity: 1;}
+.boxTitle em{height:5px;margin-right:20px;height:10px;width:10px;border-radius:50%;float:left;}
+.boxTitle p{float:left;font-size:14px;color:#282828;}
+.boxTitle span{color:#e03c32;}
+.redTit{border-left:5px solid #e03c32;padding-right:200px;}
+.boxTitle.redTit em{background:#e03c32;margin-top:25px;}
+.redTit a{float:right;font-size:14px;color:#282828;padding-right:45px;background:url(https://style.org.hc360.com/images/Nindex/news2019/icon.png) 70px -159px no-repeat;margin-top:15px;height:32px;line-height:30px;width:57px;white-space:nowrap;}
+.purchaseCon{height:295px;}
+.purchaseLeft{width:910px;float:left;background:#fff;height:255px;padding:20px 40px;overflow:hidden;}
+.purchaseRig{height:295px;width:190px;float:right;background:#fff;position:relative;}
+.purchaseList{overflow:hidden;height:255px;width:103%;position:relative;}
+.purchaseList li{height:50px;float:left;width:258px;padding:16px 20px 20px 25px;border-top:1px solid #e9eaec;border-left:1px solid #e9eaec;margin-left:-1px;margin-top:-1px;}
+.purchaseList dt{line-height:26px;height:26px;overflow:hidden;}
+.purchaseList dt a{color:#282828;}
+.purchaseList dt a:hover{color:#d94536;}
+.purchaseList .purchaseTit{font-size:16px;float:left;width:168px;}
+.purchaseList .quoteBtn{display:block;width:86px;height:26px;float:right;background:#959595;color:#fff;text-align:center;line-height:26px;border-radius:50px;transition:.3s;}
+.purchaseList .quoteBtn:hover{background:#d94536;color:#fff;}
+.purchaseList dd{color:#282828;padding-top:10px;}
+.purchaseList dd p{float:left;font-size:14px;}
+.purchaseList dd p b{color:#e03c32;font-weight:normal;}
+.purchaseList dd span{float:right;font-size:12px;}
+.purchaseList .purchaseList-loading{position:absolute;top:50%;left:50%;}
+.purchaseRigTop{padding-top:12px;text-align:center;color:#282828;margin-bottom:6px;}
+.purchaseRigTop h4{font-size:16px;line-height:30px;}
+.purchaseRigTop p{font-size:12px;padding:3px 0 0;}
+.purchaseRigTop p b{color:#d94536;font-weight:normal;}
+.unitBox{height:32px;width:70px;border:1px solid #e9eaec;position:relative;margin-bottom:10px;color:#6d6d6e;float:right;z-index:4;}
+.purchaseRig input{border:1px solid #e9eaec;height:32px;padding-left:6px;width:160px;color: #282828;font-size:12px;transition:.5s;}
+.purchaseRig input.w82{width:82px;float:left;}
+.purchaseRig li{padding:10px 10px 0;height:34px;font-size:12px;}
+.unitBox p{height:32px;border:0;background:none;width:60px;line-height:32px;padding-left:6px;color:#6d6d6e;}
+.unitBox em{display:block;position:absolute;right:0;top:0;height:32px;width:32px;background:url(https://style.org.hc360.com/images/Nindex/news2019/icon.png) 17px -109px no-repeat;cursor:pointer;}
+.purchaseRig button{display:block;width:140px;height:30px;background:#d94536;border-radius:50px;border:0;color:#fff;font-size:14px;margin:22px auto 0;z-index:6;line-height:30px;transition:.3s;}
+.purchasePrompt{text-align:center;font-size:12px;color:#d94536;padding-top:12px;}
+.blueTit{border-left:5px solid #2375da;padding-right:200px;}
+.boxTitle.blueTit em{background:#2375da;margin-top:25px;}
+.charMarketCon{overflow:hidden;}
+.layout-990 .charMarketCon{width:990px}
+.charMarket_1,.charMarket_2,.charMarket_3,.charMarket_4{float:left;width:590px;}
+.charMarket_1{margin:0 10px 10px 0;}
+.charMarket_2{margin:0 0 10px;}
+.charMarket_3{margin:0 10px 0 0;}
+.charMarket_4{margin:0;}
+.charLeft{float:left;width:172px;height:246px;position:relative;margin-right:10px;padding:0 0 18px 18px;background:url(https://style.org.hc360.com/images/Nindex/news2019/charMarketBgImg.png);}
+.charLeft .charLeftBtn{bottom:28px;position:absolute;left:26px;z-index:2;}
+.charLeftBtn a{display:block;padding:0 9px;margin:0 5px;border:1px solid #afc8e6;color:#fff;text-align:center;line-height:20px;height:20px;border-radius:30px;float:left;margin-top:3px;transition:.3s;}
+.charLeftBtn a.blackBtn{color:#282828;border:1px solid #597290;}
+.charRig,.charRig3,.charRig3,.charRig4{padding:10px 5px;width:380px;height:244px;background:#fff;float:left;}
+.charRig li{height:194px;width:116px;float:left;position:relative;background:#eaf4ff;margin:0 5px;text-align:left;overflow:hidden;}
+.charRig li a{display:block;height:194px;width:116px;}
+.charRig li img{position:absolute;bottom:0;left:12px;}
+.charRig li h4{color:#282828;font-size:18px;top:18px;left:10px;position:absolute;font-weight:bold;font-style:italic;right:10px;}
+.charRig li p{position:absolute;left:10px;width:100%;font-size:12px;top:44px;color:#666;font-style:italic;}
+.charRigBot{overflow:hidden;clear:both;padding:10px 5px;}
+.charRigBot a{display:block;padding:0 9px;margin-right:10px;border:1px solid #a9a9a9;color:#282828;text-align:center;line-height:20px;height:20px;border-radius:30px;float:left;transition:.3s;}
+.charRig3{padding:5px;height:254px;}
+.charRig3 ul{overflow:hidden;}
+.charRig3 li{float:left;width:116px;height:60px;margin:5px;overflow:hidden;}
+.charRig3 .charRigBot{padding:5px 5px;}
+.mqPurchase{float:left;}
+.mqPurchase{height:198px;overflow:hidden;width:375px;}
+.mqPurCon{width:224px;height:74px;background:#eaf4ff;margin-left:5px;margin-bottom:10px;padding:10px;}
+.mqPurchaseList{float:left;}
+.mqPurchase ul{float:right;}
+.mqPurchase ul li{margin-bottom:10px;height:60px;overflow:hidden;width:116px;}
+.charRig4 .charRigBot a,.charRig3 .charRigBot a{margin-top:0;}
+.mqPurCon dt{overflow:hidden;padding: 1px 0 1px;line-height:20px;}
+.mqPurCon dt a{float:left;font-size:16px;width:85px;-o-text-overflow:ellipsis;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;margin-top: 3px;}
+.mqPurCon dt span{float:right;}
+.mqPurCon dd{overflow:hidden;color:#282828;font-size:12px;padding-bottom:6px;line-height:22px;}
+.mqPurCon dd span{float:left;}
+.mqPurCon dd a{float:right;display:block;color:#d94536;height:22px;line-height:22px;padding:0 10px;border-radius:30px;}
+.mqPurCon dd a:hover{background:#fff;}
+.mqPurCon dd p{font-size:12px;color:#959595;}
+.mqPurCon dd p.p1{float:left;}
+.mqPurCon dd p.p2{float:right;}
+.charRigBot a:hover,.charLeftBtn a:hover{background:#d94536;color:#fff;border:1px solid #d94536;}
+.violetTit{border-left:5px solid #d99e32;}
+.boxTitle.violetTit em{background:#d99e32;margin-top:25px;}
+.tabBoxCon{height:122px;position:relative;}
+.tabBoxCon ul{position:absolute;top:0;}
+.tabBoxCon ul li{float:left;width:132px;height:30px;padding:15px 0;border-bottom:1px solid #f3f3f3;position:relative;cursor:pointer;color:#333;background:#fff;font-size:14px;line-height:30px;text-align: left;}
+.tabBoxCon ul li b{display:inline-block;width:30px;font-weight:400;vertical-align: middle;margin: 0 8px 0 20px;}
+.setUpAlert{height: 230px;width:1190px;overflow:hidden;position:absolute;top: 70px;z-index:500;-webkit-box-shadow: 0 1px 10px #eee;-moz-box-shadow: 0 1px 10px #eee;box-shadow: 0 1px 10px #eee;display:none;animation:myfirst3 .5s;-moz-animation:myfirst3 .5s;-webkit-animation:myfirst3 .5s;-o-animation:myfirst3 .5s;border-top:none;border-radius:0 0 2px 2px;background:#fff;}
+.setUpAlert p{display:block;width:280px;text-align:center;color: #282828;border-radius:20px;margin: 28px auto 0;font-size:14px;}
+.setUpAlert dl{overflow:hidden;padding: 18px 0 10px;width: 960px;border-bottom: 1px solid #e9eaec;text-align: center;margin: 0 auto;}
+.setUpAlert dl dd{overflow:hidden;display: inline-block;height: 30px;margin-bottom: 8px;}
+.setUpAlert dl dd span{color: #c78816;line-height: 30px;cursor:pointer;font-size: 12px;width: 100px;height: 30px;border-radius: 30px;display: block;text-align: center;background: #fff9ea;margin: 0 5px;transition: .1s;}
+.setUpAlert button{border:0;width: 140px;height:30px;text-align:center;line-height:30px;color:#fff;margin: 18px auto 0;display:block;background: #d99e32;border-radius:30px;font-size: 14px;}
+.setUpAlert button:hover{ opacity:.9;}
+.setUpAlert dl dd.sCurrent span{color: #fff;background: #d99e32;}
+.tabBoxCon li b{text-align:center;line-height:30px;color:#d0901d;font-size:30px;font-weight:700;}
+.tabBoxCon ul li.setUp{width: 70px;border-right:0;color: #fff;font-size: 18px;height: 60px;line-height: 24px;background: #d99e32;text-align: center;margin-left: 10px;padding-top: 10px;}
+/*.tabBoxCon ul li em{background:#d0901d;position:absolute;height:2px;width:100%;bottom:0;left:0;display:none;z-index:5000;}*/
+.tabBoxCon ul li.tbCur,.tabBoxCon ul li:hover{background:#dba020;color:#fff;}
+.tabBoxCon ul li.tbCur b,.tabBoxCon ul li:hover b{color:#fff;}
+.tabBoxCon ul li.setUp:hover em{display:none;}
+.tabBoxListCon{padding-top: 10px;overflow:hidden;}
+.tabBoxList{overflow:hidden;animation:myfirst2 .5s;-moz-animation:myfirst2 .5s;-webkit-animation:myfirst2 .5s;-o-animation:myfirst2 .5s;width:1190px;}
+.tabBoxListTop{height:306px;}
+.industryLeftImg{float:left;width:222px;height:288px;position:relative;background:url(https://style.org.hc360.com/images/Nindex/news2019/industryBgImg2.png);padding:0 0 18px 18px;}
+.industryLeftBtn{bottom:31px;position:absolute;left:26px;z-index:2;}
+.industryLeftBtn a{display:block;padding:0 9px;margin:0 5px;border:1px solid #fff;color:#fff;text-align:center;line-height:20px;height:20px;border-radius:30px;float:left;margin-top:3px;transition:.3s;}
+.industryLeftBtn a.blackBtn{color:#282828;border: 1px solid #927f5c;}
+.industryLeftBtn a:hover{background:#d94536;color:#fff;border:1px solid #d94536;}
+.industryTopRig{overflow:hidden;height:296px;width:930px;float:right;background:#fff;}
+.industryTopRig{padding:5px;}
+.industryTopRig li{float:left;margin:5px;width:300px;height:94px;background:#fff9ea;}
+.industryTopRig li a{display:block;}
+.industryTopRig ul{overflow:hidden;}
+.industryProImg{margin-left:12px;width:112px;height:74px;float:left;padding-top:10px;}
+.industryProImg a{display: table-cell !important;text-align: center;vertical-align: middle;width: 112px;height: 74px;}
+.industryProName{float:left;color:#282828;padding-left:8px;line-height:20px;padding-top:11px;width:160px;}
+.industryProName .industryTit{font-size:16px;height:22px;overflow:hidden;line-height:22px;}
+.industryProName p{font-size:14px;height:22px;overflow:hidden;line-height:22px;}
+.industryRigLogo{overflow:hidden;padding:13px 18px 0;}
+.industryRigLogo dd{float:left;margin:0 19px;width:140px;height:60px;overflow:hidden;}
+.adImg2{margin-top:10px;}
+.industryCompany{overflow:hidden;padding-top:10px;}
+.companyList{width:554px;height:240px;background:#fff;position:relative;padding:0 18px;float:left;overflow: hidden;}
+.companyList .companyType{position:absolute;right:0;top:0;width:70px;height:27px;text-align:center;padding-left:18px;background:url(https://style.org.hc360.com/images/Nindex/news2019/companyIco.png ) 0 0;color:#fff;font-size:14px;line-height:26px;}
+.mLeft10{margin-left:10px;}
+.mTop10{margin-top:10px;}
+.mRig10{margin-right:10px;}
+.mBot10{margin-bottom:10px;}
+.companyName{padding:20px 0 13px;line-height:22px;font-size:18px;overflow:hidden;height:22px;}
+.companyName a{display:block;float:left;color:#282828;}
+.companyName em{display:block;background:url(https://style.org.hc360.com/images/Nindex/news2019/icon.png) 0 0;float:left;margin-left:8px;}
+.companyName em.youIco{background-position:-220px 0;height:19px;width:20px;margin-top:2px;}
+.companyName em.jyIco{background-position:-241px 0;height:22px;width:19px;margin-top:0;}
+.companyList .information{overflow:hidden;height:24px;width: 110%;}
+.information li{float:left;width: 160px;line-height:24px;color:#282828;font-size:12px;}
+.information li span{color:#d9b97f;font-size:16px;display:inline-block;vertical-align:middle;margin:-2px 0 0 5px;}
+.product{overflow:hidden;height:90px;padding:15px 0;position:relative;}
+.product li{border:1px solid #f7f2e4;width:90px;height:90px;float:left;margin-right:10px;position:relative;overflow:hidden;}
+.product li a{display:table-cell;vertical-align:middle;text-align:center;height:90px;width:90px;}
+.product li a img{max-width:90px;max-height:90px;}
+.productNum{position:absolute;width:84px;height:84px;border-radius:50%;background:#e9eaec;right:26px;top:18px;text-align:center;color:#282828;font-size:12px;}
+.productNum p{color:#fff;font-size:30px;color:#d9b97f;padding-top:12px;height:40px;line-height:44px;}
+.intro{padding:5px 0;font-size:12px;color:#282828;height:18px;}
+.intro em{display:inline-block;vertical-align:middle;width:10px;height:10px;background:#d9b97f;border-radius:50%;margin:-4px 5px 0 0;}
+.proInfo{position:absolute;left:-1px;top:90px;width:92px;height:92px;z-index:5;/* display:none;*/transition:.3s;}
+.proInfo span{display:block;opacity:0.8;position:absolute;left:0;top:0;width:92px;height:92px;background:#282828;z-index:5;}
+.proInfo p.pName{left:10px;right:10px;font-size:12px;color:#fff;text-align:center;top:27px;z-index:6;position:absolute;line-height:20px;overflow:hidden;height:20px;}
+.proInfo p.pPrice{color:#d94536;position:absolute;left:10px;right:10px;top:50px;z-index:6;font-size:14px;text-align:center;}
+.greenTit{border-left:5px solid #22cbc5;}
+.boxTitle.greenTit em{background:#22cbc5;margin-top:25px;}
+.industryListCon{overflow:hidden;float:left;width:590px;height:264px;margin:0 10px 10px 0;}
+.industryListImg{position:relative;float:left;width:172px;height:246px;background:url(https://style.org.hc360.com/images/Nindex/news2019/industryBgImg.png);padding:0 0 18px 18px;}
+.industryListImg h5{position:absolute;top:0;left:18px;line-height:26px;color:#fff;text-align:center;width:78px;height:27px;background:url(https://style.org.hc360.com/images/Nindex/news2019/icon.png) -212px -79px no-repeat;padding-right:10px;}
+.industryListRig{float:right;background:#fff;padding:6px;height:252px;width:378px;}
+.industryListPro li{height:194px;width:116px;float:left;position:relative;background:#f2f7f7;margin:5px;text-align:center;overflow:hidden;}
+.industryListPro li a{display:block;height:194px;width:116px;}
+.industryListPro li img{position:absolute;bottom:0;left:12px;}
+.industryListPro li h4{color:#282828;font-size:16px;top:18px;position:absolute;left:0;width:100%;}
+.industryListPro li p{position:absolute;left:0;width:100%;font-size:12px;top:42px;color:#666;}
+.industryListLogo{overflow:hidden;padding:1px 0 0;clear:none;}
+.industryListLogo dd{float:left;margin:0 5px;width:116px;height:44px;}
+.industryListPro{height:254px;}
+.industryListPro ul{height:204px;}
+.industryList{width:1200px;overflow:hidden;}
+.adImgBox{overflow:hidden;height:120px;margin-bottom:10px;clear:both;width:1190px;}
+.adImg3,.adImg4{width:590px;height:120px;overflow:hidden;position:relative;}
+.adImg3{float:left;}
+.adImg4{float:right;}
+.yellowTit{border-left:5px solid #cca670;}
+.boxTitle.yellowTit em{background:#cca670;margin-top:25px;}
+.loadingIco{text-align:center;padding:10px 0;}
+.recommendBox{overflow:hidden;padding-top:20px;}
+.recommendCon ul{width:104%;overflow:hidden;}
+.recommendCon li{float:left;width:166px;height:260px;background:#fff;margin:0 10px 10px 0;padding:12px 12px 0;}
+.recommendCon li .recommendImg{height:164px;width:164px;border:1px solid #ebdbc6;overflow:hidden;}
+.recommendImg a{display:inline-table;text-align:center;vertical-align:middle;width:164px;height:164px;}
+.recommendImg a img{max-height:164px;max-width:164px;vertical-align:middle;}
+.recommendInfo{overflow:hidden;}
+.recommendInfo dt{line-height:20px;padding-top:10px;color:#d94536;font-size:18px;}
+.recommendInfo dd.proName{height:40px;line-height:20px;overflow:hidden;margin-top:8px;}
+.recommendInfo dd.proName a{color:#282828;font-size:14px;}
+.recommendInfo dd.proName a:hover{color:#d94536;}
+.recommendInfo dd.recommendBtn{margin-top:5px;}
+.recommendInfo dd.recommendBtn a{display:block;width:140px;height:30px;text-align:center;border-radius:30px;margin:0 auto;background:#d94536;color:#fff;line-height:30px;color:#fff;}
+.hcttBox{padding-top:20px;overflow:hidden;margin-bottom:15px;}
+.redTit2{border-left:5px solid #d94536;}
+.boxTitle.redTit2 em{background:#d94536;margin-top:25px;}
+.hcttConLeft{overflow:hidden;width:920px;padding:0 10px;height:328px;background:#fff;float:left;}
+.hcttTitle{height:40px;line-height:40px;position:relative;}
+.hcttTitle h3{float:left;font-size:14px;color:#282828;}
+.hcttTitle a{background:url(https://style.org.hc360.com/images/Nindex/news2019/icon.png) 2px -159px no-repeat;display:block;width:33px;height:32px;float:right;margin:12px 2px 0 0;position:absolute;right:0;top:0;}
+.hcttList{overflow:hidden;}
+.hcttList li{height:84px;overflow:hidden;margin-bottom:10px;}
+.ttImg{float:left;margin-right:25px;width:228px;height:82px;border:1px solid #f7dad7;overflow:hidden;}
+.ttCon{float:left;width:630px;color:#282828;height:84px;}
+.ttCon em{display:block;height:22px;color:#d94536;border:1px solid #d94536;width:56px;float:left;border-radius:30px;font-size:14px;text-align:center;line-height:22px;margin-right:8px;}
+.ttCon dt{height:24px;overflow:hidden;margin:5px 0 9px;padding-bottom:1px;}
+.ttCon dt a{display:block;float:left;color:#282828;font-size:16px;line-height:24px;}
+.ttCon dt a:hover{color:#d94536;}
+.ttCon dd{line-height:18px;font-size:12px;}
+.ttCon dd span{color:#d94536;}
+.hcttConRig{float:right;width:210px;height:328px;background:#fff;padding:0 15px;}
+.infoList{padding:32px 10px 20px;}
+.infoList li{padding:9px 0;height:20px;overflow:hidden;}
+.infoList li span{display:block;float:left;width:46px;height:20px;line-height:20px;text-align:center;background:#d94536;border-radius:30px;color:#fff;}
+.infoList li a{display:block;float:left;width:132px;padding-left:5px;-o-text-overflow:ellipsis;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+.adImg5,.adImg7{width:290px;height:120px;overflow:hidden;float:left;position:relative;}
+.adImg6{width:590px;height:120px;overflow:hidden;float:left;margin:0 10px;position:relative;}
+.marTop15{margin-top:15px;}
+.adImgBox2{overflow:hidden;height:120px;clear:both;width:1190px;margin:0 auto;}
+.bottomBox{padding-top:30px;overflow:hidden;margin-bottom:15px;}
+.exhibitionBox,.videoBox{float:left;width:590px;}
+.videoBox{margin-left:10px;}
+.blueTit2{border-left:5px solid #2375da;}
+.boxTitle.blueTit2 em{background:#2375da;margin-top:25px;}
+.exhibitionImg,.videoImg{width:180px;height:180px;float:left;position:relative;text-align:left;line-height:12px;overflow:hidden;}
+.videoCon li,.exhibitionCon li{float:left;width:180px;height:180px;padding:5px;}
+.exhibitionCon,.videoCon{overflow:hidden;background:#fff;width:570px;height:257px;padding:0 10px;}
+.botTitle{height:40px;line-height:40px;margin:0 0 0 10px;position:relative;}
+.botTitle h3{float:left;font-size:14px;color:#282828;}
+.botTitle a{background:url(https://style.org.hc360.com/images/Nindex/news2019/icon.png) 2px -159px no-repeat;display:block;width:33px;height:32px;float:right;margin:12px 2px 0 0;position:absolute;right:0;top:0;}
+.exhibitionImg .info{position:absolute;left:0;top:180px;width:180px;height:180px;z-index:5;transition:.5s;}
+.exhibitionImg span{display:block;opacity:0.8;position:absolute;left:0;top:0;width:180px;height:180px;background:#282828;z-index:5;}
+.exhibitionImg h5{left:20px;right:20px;font-size:14px;color:#fff;top:48px;z-index:6;position:absolute;line-height:18px;height:36px;overflow:hidden;}
+.exhibitionImg p{color:#fff;position:absolute;left:20px;right:20px;top:95px;z-index:6;font-size:14px;font-size:12px;line-height:18px;}
+.exhibitionCon ul,.videoCon ul{display:block;padding-top:13px;}
+.videoImg .info{position:absolute;left:0;top:0;width:180px;height:180px;z-index:5;}
+.videoImg span{display:block;opacity:0.8;position:absolute;left:0;bottom:0;width:180px;height:32px;background:#282828;z-index:5;}
+.videoImg h5{left:10px;right:10px;font-size:14px;color:#fff;bottom:0;z-index:6;position:absolute;line-height:32px;height:32px;overflow:hidden;color:#fff;transition:.3s;}
+.videoImg .interview{position:absolute;top:0;right:0;line-height:26px;color:#fff;text-align:center;width:73px;height:27px;background:url(https://style.org.hc360.com/images/Nindex/news2019/icon.png) -212px -107px no-repeat;padding-left:15px;z-index:5;}
+.webLink{text-align:center;color:#636363;font-size:14px;line-height:30px;padding:2px 0 20px;}
+.webLink a{color:#636363;}
+.webLink em{padding:0 19px;}
+.bottomLinkBox{margin-top:10px;background:#282828;overflow:hidden;height:477px;}
+.hcService{width:1190px;margin:0 auto;padding-top:20px;height:228px;}
+.serviceLeft{float:left;width:600px;}
+.serviceLeft ul{}
+.serviceLeft li{width:100px;float:left;padding-left:50px;}
+.serviceLeft li h3,.serviceRig li h3{line-height:34px;margin-bottom:12px;font-size:14px;color:#fff;}
+.serviceLeft li a{color:#a7a7a7;font-size:12px;line-height:24px;}
+.serviceLeft li a:hover{color:#d94536;}
+.serviceRig{float:left;padding-left:175px;}
+.serviceRig li{float:left;width:110px;margin-right:30px;}
+.serviceRig li h3{text-align:center;}
+.serviceRig li .codeImg{width:110px;height:110px;margin:0 auto;padding-top:6px;}
+.weblinkTxt{width:1090px;margin:0 auto;border-top:1px solid #212121;padding:0 10px;}
+.linkWrap{padding-top:26px;height:140px;}
+.linkWrap h3{line-height:26px;font-size:14px;color:#fff;}
+.linkWrap p{font-size:12px;color:#8e8e8e;line-height:24px;padding-top:13px;}
+.linkWrap p span{padding:0 5px;}
+.linkWrap a{color:#8e8e8e;}
+.footerBox{background:#202020;height:250px;}
+.webLogo{padding:10px 0 18px 10px;text-align:center}
+.webLogo a{display:inline-block;height:36px;margin-right:10px;background:url("https://style.org.hc360.com/images/Nindex/news2017/f_pic.png") no-repeat;}
+.webLogo a.hover1{background-position:0 -128px;width:83px}
+.webLogo a.hover2{background-position:-85px -128px;width:83px}
+.webLogo a.hover3{background-position:-170px -128px;width:93px}
+.webLogo a.hover4{background-position:-265px -128px;width:98px}
+.webLogo a.hover5{background-position:-365px -128px;width:85px}
+.webLogo a.hover6{background-position:-452px -128px;width:81px}
+.webLogo a.hover7{background-position:-535px -128px;width:120px}
+.webLogo a.hover8{background-position:-657px -128px;width:76px}
+.copyTxt{color:#636363;line-height:24px;text-align:center;padding:26px 0 17px;font-size:14px;}
+.copyTxt a{color:#636363;margin-right:15px;}
+.indexes{padding-top:20px;text-align:center;clear:both;padding:15px 0 5px;}
+.indexes,.indexes a{color:#636363;font-size:12px;}
+.indexes a{padding:0 9px;display:inline-block}
+.copy{text-align:center;font-size:14px;color:#636363;line-height:30px;}
+.H_Bside_UList ul li:hover{background:#d94536;}
+.H_Bside_UList ul li:hover a,.H_Bside_UList ul li:hover span{color:#fff;}
+.sideBarLeft li:first-child .sideBarLinkBox{border-top:0;}
+.industryProBtn{overflow:hidden;clear:both;padding:2px 0;}
+.industryProBtn a{display:block;padding:0 9px;margin-right:10px;border:1px solid #a9a9a9;color:#282828;text-align:center;line-height:20px;height:20px;border-radius:30px;float:left;margin-top:4px;transition:.3s;}
+.rigSeleCon ul.seleList{position:absolute;top: 34px;left: 0px;background:#f3f3f4;line-height:28px;color: #282828;display:none;}
+.rigSeleCon ul.seleList li{height:28px;padding:0 10px;width:150px;cursor:pointer;}
+.rigSeleCon ul.seleList li:hover{background:#e9eaec;}
+.quota{z-index:5;}
+.term{z-index:4;}
+.purchaseSucc{position:absolute;top:0;left:0;width:100%;height:100%;}
+.purchaseBg{display:block;opacity:0.8;position:absolute;left:0;top:0;width:100%;height:100%;background:#282828;z-index:5;}
+.purchaseSucc a{display:block;z-index:5;width:30px;height:30px;position:absolute;right:10px;top:10px;background:url(https://style.org.hc360.com/images/Nindex/news2019/icon.png) 0 -239px no-repeat;cursor:pointer;}
+.purchaseSucc dl{position:absolute;left:20px;right:20px;z-index:6;top:110px;color:#fff;text-align:center;}
+.purchaseSucc dt{font-size:16px;line-height:36px;}
+.purchaseSucc dd{font-size:12px;}
+.purchaseSucc button{position:absolute;bottom:42px;left:25px;}
+.r_sidebar_wrap{position:fixed;_position:absolute;top:0;right:0;z-index:9990;width:0;height:100%;}
+.r_sidebar{position:absolute;right:0;top:0;width:0;height:100%;width:35px;background:#282828;}
+.r_sidebar_con{position:absolute;top:50%;left:0;width:35px;margin-top:-95px}
+.r_sidebar_con li{position:relative;width:35px;height:36px;margin:1px 0 0;cursor:pointer}
+#backtop s,.r_sidebar_con li s{width:35px;height:36px;display:block;position:absolute;left:0;top:0;background:url(https://style.org.hc360.com/images/Nindex/news2016/indexicon.png) no-repeat;}
+#backtop span,.r_sidebar_con li span{width:60px;text-align:center;position:absolute;right:35px;top:0;line-height:36px;background-color:#d94536;color:#fff;display:none}
+#backtop:hover,#backtop:hover span,.r_sidebar_con li:hover,.r_sidebar_con li:hover span{background-color:#d94536}
+.r_sidebar_con li.shop_ico s{background-position:-93px -265px}
+.r_sidebar_con li.client_ico s{background-position:-122px -265px}
+.r_sidebar_con li.online_icon s{background-position:-149px -265px}
+.r_sidebar_con li.user_ico s{background-position:-182px -265px}
+#backtop{position:relative;width:35px;height:36px;display:block;cursor:pointer;margin-top:60px;background:#282828;position:fixed;bottom:100px;transition:.3s;}
+#backtop s{background-position:-278px -265px}
+.rigAnBtn a s,.rigCloseBtn a s{background:url(https://style.org.hc360.com/images/Nindex/news2016/indexicon.png) no-repeat}
+.rigCloseBtn a s{background-position:-305px -265px}
+.rigAnBtn a s,.rigCloseBtn a s{display:block;width:35px;height:36px}
+.rigAnBtn a s{background-position:-335px -265px}
+.rigAnBtn,.rigCloseBtn{width:35px;height:36px;display:block;cursor:pointer;margin-top:1px;position:fixed;bottom:59px}
+.rigAnBtn a:hover,.rigCloseBtn a:hover{background:#d94536}
+.rigAnBtn span,.rigCloseBtn span{width:60px;text-align:center;position:absolute;right:35px;top:0;line-height:36px;background-color:#d94536;color:#fff;display:none}
+.r_sidebar_con a,.rigAnBtn a,.rigCloseBtn a{display:block;width:35px;height:36px;cursor:pointer;transition:.3s;}
+.r_sidebar_con a:hover{background:#d94536}
+.r_sidebar_con a{background:#282828;}
+.SearchWrap_cont ul li:hover{}
+.headerFixed{position:fixed;left:0;width:100%;top:0;background:#fff;z-index:1213;box-shadow:0 0 10px #cdcdd0;height:70px;}
+.headerFixed .logo{padding:11px 0 11px 25px}
+.headerFixed .h_search{padding:15px 0 0 60px;}
+.headerFixed .headerRigBtn{padding-top:20px;}
+.mad_bx li{position:absolute;left:;top:0;}
+.mad_bx li a{width:810px;height:500px;position:absolute;top:0;left:50%;margin-left:-405px;}
+.l_sidebar_wrap{width:56px;position:fixed;top:50%;margin-top:-200px;left:50%;margin-left: -661px;display:none;z-index:9999;}
+.l_sidebar_wrap a{display:block;margin-bottom:1px;height:32px;width:36px;background:#e9e8ed;color:#282828;padding:12px 10px;line-height:16px;text-align:center;font-size:14px;position:relative;}
+.l_sidebar_wrap a.redLink,.l_sidebar_wrap a:hover{background:#d94536;color:#fff!important;}
+.l_sidebar_wrap a.goodProLink, .l_sidebar_wrap a.redLink.goodProLink, .l_sidebar_wrap a.goodProLink:hover{background-image:url(https://style.org.hc360.com/images/Nindex/news2019/leftNavIco.png);background-image:url(https://style.org.hc360.com/images/Nindex/news2019/leftFixedIcon.svg), none;background-repeat:no-repeat;background-size:56px 56px;background-color:rgba(0,0,0,0);}
+.headerRigBtn a:hover{background:#d94536;color:#fff;}
+.loginAfter a:hover,.purchaseRig button:hover{background:#dd574b;color:#fff;}
+.companyName a:hover,.industryListPro li a:hover h4,.industryListPro li a:hover p,.linkWrap a:hover,.webLink a:hover,.copyTxt a:hover,.indexes a:hover,.rigService li a:hover span,.redTit a:hover,.videoImg a:hover h5{color:#d94536;}
+.industryProBtn a:hover{color:#fff;border:1px solid #d94536;background:#d94536;}
+.csxz{z-index:100}
+.csxz,.csxz1{position:relative;}
+.csxz .ss_dk,.csxz1 .ss_dk{position:absolute;top:27px;left:50px;width:320px;overflow:hidden;padding:0;display:block;background:#fff;z-index:2;}
+.csxz .ss_dk_index,.csxz1 .ss_dk_index{position:absolute;top: 35px;left:0;width:230px;overflow:hidden;display:block;background:#f3f3f4;z-index:2;box-shadow: 0 0 5px rgba(0,0,0,0.1);}
+.ss_dk .tabt ul li{float:left;height:35px;line-height:35px;text-align:center;cursor:pointer;color:#282828;}
+.ss_dk .tabt ul li.li_long1{width:50px;}
+.ss_dk .tabt ul li.li_long2{width:50px;}
+.ss_dk .tabt ul li.li_long3{width:50px;}
+.ss_dk .tabt ul li.li_long4{width:50px;}
+.show-select .ss_dk ul{border:none;box-shadow:none;}
+.ss_dk .tabt ul li.hover4{color:#282828;border-bottom:2px solid #d94536;font-weight:bold;height:34px;}
+.xz_cs{width:100%;overflow:hidden}
+.xz_cs .ssw{width:210px;overflow:hidden;padding:10px;display:none;}
+.xz_cs .ssw ul li{float:left;cursor:pointer;display:inline;font-size:12px;height:22px;line-height:22px;margin-bottom:4px;padding:0 8px;white-space:nowrap;border-radius:30px;}
+.xz_cs .ssw ul li.ss_dk_current{font-weight:bold;color:#f68203}
+.xz_cs .ssw ul li:hover{color:#d94536;}
+.ssw p{width:100%;height:30px;line-height:30px;clear:both;color:#282828;text-align:left;}
+.csxz1 .ss_dk,.csxz .ss_dk{display:none}
+.csxz .pts,.csxz1 .pts{position:absolute;top:40px;left:0;color:#f00;line-height:22px;padding-left:55px;font-size:12px}
+.csxz .pts span,.csxz1 .pts span{float:left;height:22px;line-height:22px;background-position:-34px -86px;padding-left:22px;display:inline-block}
+.csxz span.sel_btn,.csxz1 span.sel_btn{position:absolute;right:25px;top:15px;_top:14px;width:15px;height:10px;display:block;background-position:-92px -64px;cursor:pointer}
+.csxz span.sel_btn_disabled,.csxz1 span.sel_btn_disabled{position:absolute;right:25px;top:15px;_top:14px;width:15px;height:10px;display:block;background-position:-112px -64px;cursor:pointer}
+.csxz_tip{width:100%;height:28px;overflow:hidden}
+#lastEndAddr,#lastStartAddr{margin-left:55px}
+#lastEndAddr a,#lastStartAddr a{float:left;font-size:12px;margin-right:10px;line-height:28px;color:#666}
+.icon_loading{position:absolute;width:16px;height:16px}
+.csxz .icon_loading{right:-5px;top:10px}
+.csxz1 .icon_loading{right:-5px;top:10px}
+.part1{width:1090px;overflow:hidden}
+.part2,.part3,.part4,.part5,.part6{width:1090px;overflow:hidden;background:#f5f5f5}
+.part1 ul li{float:left;width:255px;height:105px;line-height:105px;font-size:20px;color:#333;font-family:microsoft yahei}
+.part1 ul li span{float:left;margin:25px 10px 0 60px;display:inline-block}
+.part1 ul li.part1_con1 span{width:58px;height:60px;background-position:0 1px}
+.part1 ul li.part1_con2 span{width:59px;height:60px;background-position:-58px 1px}
+.part1 ul li.part1_con3 span{width:58px;height:60px;background-position:-117px 1px}
+.part1 ul li.part1_con4{width:320px;padding-top:13px;overflow:hidden;border-left:1px dashed #ddd}
+.part1 ul li.part1_con4 p{float:left;width:30px;height:80px;margin-left:25px;background-position:0 -65px;_display:inline}
+.part1 ul li.part1_con4 ul li{width:255px;height:25px;line-height:25px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.part1 ul li.part1_con4 ul li a{color:#666;font-size:12px}
+.part1 ul li.part1_con4 ul li a:hover{color:#fff;text-decoration:underline}
+.part2 ul{width:100%;overflow:hidden;margin-top:10px}
+.part2 ul li{width:525px;height:180px;padding:10px;background:#fff}
+.part2 ul li dl dt{float:left;width:190px;height:180px}
+.part2 ul li dl dd{float:right;width:310px;height:180px}
+.part2 ul li dl dt a{width:100%;height:60px;overflow:hidden;text-align:center;padding:10px 0;border-bottom:1px dashed #ddd;display:inline-block}
+.part2 ul li dl dt .upto{width:100%;height:95px;padding-top:20px}
+.part2 ul li dl dt .upto h3{font:normal 16px/30px microsoft yahei;color:#333;text-align:center}
+.part2 ul li dl dt .upto h3 span{font:bold 24px/30px microsoft yahei;color:#ee1c23;margin:0 5px}
+.part2 ul li dl dt .upto p{width:100%;height:35px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:center;font:normal 12px/35px microsoft yahei;color:#666}
+.part3 ul{width:100%;overflow:hidden;margin-top:5px}
+.part3 ul li{float:left;width:192px;_width:190px;height:178px;margin-right:5px;_display:inline;padding:10px;background:#fff;border:1px solid #fff}
+.part3 ul li.last{margin-right:0}
+.part3 ul li.hover{border:1px solid #FF5203;cursor:pointer}
+.part3 ul li.none{background-position:0 -472px;_height:192px}
+.part3 ul li a{width:100%;height:80px;overflow:hidden;text-align:center;border-bottom:1px dashed #ddd;display:inline-block;border:1px solid #fff;border-bottom:1px dashed #ddd}
+.part3 ul li.hover a{border-bottom:1px dashed #FD5F30}
+.part3 ul li a:hover{border:1px solid #ddd}
+.part3 ul li a img{margin-top:10px}
+.part3 ul li .upto{height:95px;padding:5px 0 0 5px}
+.part3 ul li .upto h3{font:normal 14px/30px microsoft yahei;color:#333}
+.part3 ul li .upto h3 span{font:bold 18px/30px microsoft yahei;color:#ee1c23;margin:0 5px}
+.H_RigBotTCon .tabCon{display:none;}
+.tabt{border-bottom:1px solid #e9eaec;height:35px}
+.hoverbg{background:#d94536;color:#fff;}
+.hyindex p{text-align:left;padding:0 0 15px;line-height:18px;}
+.industryListPro li img,.industryTopRig li img,.charRig li a img,.mqPurchase ul li a img,.charRig3 li a img,.recommendImg a img,.ttImg a img,.videoImg a img,.industryRigLogo dd a img{-webkit-transition:all .5s ease 0s;-moz-transition:all .5s ease 0s;-o-transition:all .5s ease 0s;transition:all .5s ease 0s}
+.industryListPro li a:hover img,.industryTopRig li:hover img,.charRig li a:hover img,.mqPurchase ul li a:hover img,.charRig3 li a:hover img,.recommendImg a:hover img,.ttImg a:hover img,.videoImg a:hover img,.industryRigLogo dd a:hover img{-webkit-transform:scale(1.05);-moz-transform:scale(1.05);-o-transform:scale(1.05);transform:scale(1.05)}
+.industryListImg a:hover h5{opacity:1;z-index:5;}
+.industryListImg a:hover img,.industryLeftImg a:hover img,.charLeft a:hover{opacity:0.86;}
+.recommendInfo{height:83px;overflow:hidden;}
+.recommendCon li dl{transition:.3s;}
+.recommendCon li.hover dl{margin-top:-30px;}
+.purchaseSucc{display:none;}
+.purchaseRig input.error{border:1px solid #e08780;color:#d94537;}
+.purchaseRig input:hover,.rigSeleCon input:hover{border:1px solid #e08780;}
+.charLeftCon{background:#79a4d5;width:172px;height:246px;}
+.charLeftCon a{display:block;width:172px;height:246px;}
+.charLeftCon h4{font-size:20px;color:#fff;font-style:italic;font-weight:bold;padding: 16px 12px 0;line-height:20px;height:20px;overflow: hidden;margin-bottom: 5px;}
+.charLeftCon p{font-size:14px;color:#fff;font-style:italic;padding:0 12px;line-height:14px;margin-bottom: 6px;height:14px;overflow: hidden;}
+.charLeftImg{display:table-cell;width:150px;height:132px;padding:0 11px;vertical-align:middle;text-align:center;}
+.htyImgCon{background:#aac7c6;width:172px;height:246px;}
+.htyImgCon a{display:block;width:172px;height:246px;}
+.htyImgCon h4{font-size:20px;color:#fff;font-style:italic;font-weight:bold;padding: 50px 12px 6px;line-height:20px;height:20px;overflow: hidden;}
+.htyImgCon p{font-size:14px;color:#fff;font-style:italic;padding: 0 12px;line-height:14px;margin-bottom:6px;height:14px;overflow: hidden;}
+.htyImg{display:table-cell;width:152px;height:125px;padding:0 10px;vertical-align:middle;text-align:center;}
+.industryLeftCon{background:#d9b97f;width:222px;height:288px;}
+.industryLeftCon a{display:block;width:222px;height:288px;}
+.industryLeftCon h4{font-size: 28px;color:#fff;font-style:italic;font-weight:bold;padding: 15px 12px 0;line-height: 30px;height: 30px;margin-bottom: 8px;overflow: hidden;}
+.industryLeftCon p{font-size: 18px;color:#fff;font-style:italic;padding:0 12px;line-height: 20px;margin-bottom: 6px;height: 20px;overflow: hidden;}
+.hyLeftProImg{display:table-cell;width:202px;height:149px;padding:0 10px;vertical-align:middle;text-align:center;}
+.adImg2{width:1190px;margin:10px auto 0;}
+.banneModBot .activityImg a{display:table-cell;text-align:center;vertical-align:middle;width:190px;height:125px;position:relative;}
+.newsList{background:#de432f;width:168px;height:110px;padding:7px 11px 8px;float:left;}
+.listCon{overflow:hidden;height:110px;}
+.listCon li{line-height:22px;height:22px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#f0c3c0;}
+.listCon li a{color:#f0c3c0;}
+.listCon li span{margin-right:3px;}
+.listCon li span,.listCon li a:hover{color:#fff;}
+.mad_bx em{position:absolute;z-index:60;width:30px;height:18px;line-height:18px;text-align:center;color:#fff;background:#333;filter:alpha(opacity=30);-moz-opacity:.3;-khtml-opacity:.3;opacity:.3;border-radius:3px;left:50%;bottom:145px;margin-left:-395px;}
+.adImg1 em,.adImg2 em,.adImg3 em,.adImg4 em,.adImg5 em,.adImg6 em,.adImg7 em{position:absolute;z-index:60;width:30px;height:18px;line-height:18px;text-align:center;color:#fff;background:#333;filter:alpha(opacity=30);-moz-opacity:.3;-khtml-opacity:.3;opacity:.3;border-radius:3px;left:0;bottom:0;}
+.adImg1 a,.adImg2 a{display:block;height:80px;}
+.mad_bx img{position:absolute}
+.mad_bx img.main-img{height:500px;width:810px;left:0;z-index:3;opacity:0;}
+.mad_bx img.left-img{height:500px;left:-580px;top:0;opacity:0;-moz-transition:all .4s linear .18s;-webkit-transition:all .4s linear .18s;-o-transition:all .4s linear .18s;transition:all .4s linear .18s;}
+.mad_bx img.right-img{height:500px;right:-240px;top:0;opacity:0;-moz-transition:all .4s linear .5s;-webkit-transition:all .4s linear .5s;-o-transition:all .4s linear .5s;transition:all .4s linear .5s;}
+.mad_bx li.cur img.left-img{left:0;top:0;opacity:1;z-index:5}
+.mad_bx li.cur img.right-img{right:0;top:0;opacity:1;z-index:4}
+.mad_bx li.cur img.main-img{opacity:1;z-index:3}
+.purchaseList::-webkit-scrollbar{width:4px}
+.purchaseList::-webkit-scrollbar-track{background:#fff;-webkit-border-radius:2em;-moz-border-radius:2em;border-radius:2em}
+.purchaseList::-webkit-scrollbar-thumb{background:#b7b7b7;-webkit-border-radius:2em;-moz-border-radius:2em;border-radius:2em}
+.layout-990 .toolbarCon{width:990px}
+.layout-990 .navwrap .nav_main{width:990px;}
+.layout-990 .nav_main li a{margin:0 14px;font-size:14px;}
+.layout-990 .navgationCon{width:990px;}
+.layout-990 .H_Bside_cont{margin-left:-495px;}
+.layout-990 .mad_bx li a{margin-left:-355px;}
+.layout-990 .H_Rgiht{margin-left:305px;}
+.layout-990 .banneModBot{margin-left:-295px;}
+.layout-990 .w1190{width:990px;}
+.layout-990 .purchaseLeft{width:760px;padding:20px 15px;}
+.layout-990 .purchaseList li{padding:16px 10px 20px 10px;width:233px;}
+.layout-990 .purchaseList .purchaseTit{width:138px;}
+.layout-990 .charMarket_1,.layout-990 .charMarket_2,.layout-990 .charMarket_3,.layout-990 .charMarket_4{width:490px;}
+.layout-990 .charRig,.layout-990 .charRig3,.layout-990 .charRig4{width:280px;}
+.layout-990 .charRig ul{height:194px;overflow:hidden;}.layout-990 .toolbarCon{width:990px}
+.layout-990 .navwrap .nav_main{width:990px;}
+.layout-990 .nav_main li a{margin:0 12px;font-size:14px;}
+.layout-990 .navgationCon{width:990px;}
+.layout-990 .H_Bside_cont{margin-left:-495px;}
+.layout-990 .mad_bx li a{margin-left:-355px;}
+.layout-990 .H_Rgiht{margin-left:305px;}
+.layout-990 .banneModBot{margin-left:-295px;}
+.layout-990 .w1190{width:990px;}
+.layout-990 .purchaseLeft{width:760px;padding:20px 15px;}
+.layout-990 .purchaseList li{padding:16px 10px 20px 10px;width:233px;}
+.layout-990 .purchaseList .purchaseTit{width:138px;}
+.layout-990 .charMarket_1,.layout-990 .charMarket_2,.layout-990 .charMarket_3,.layout-990 .charMarket_4{width:490px;}
+.layout-990 .charRig,.layout-990 .charRig3,.layout-990 .charRig4{width:280px;}
+.layout-990 .charRig ul{height:194px;overflow:hidden;}
+.layout-990 .charRig li{padding:0 7px;}
+.layout-990 .charRig .charRigBot{margin:10px 5px;padding:0;height:22px;}
+.layout-990 .charRig3 li{width:130px;}
+.layout-990 .charRig3 ul{height:205px;}
+.layout-990 .mqPurCon{width:250px;}
+.layout-990 .charRig4 .charRigBot{margin:0 5px;padding:10px 0 0 0;height:22px;}
+.layout-990 .charRig3 .charRigBot{margin:0 5px;padding:10px 0 0 0;height:22px;}
+.layout-990 .tabBoxCon ul li{width: 110px;font-size: 14px;}
+.layout-990 .tabBoxCon ul li b{font-size: 30px;margin: -2px 5px 0 10px;}
+.layout-990 .tabBoxCon ul li.setUp{width: 64px;font-size: 14px;}
+.layout-990 .industryTopRig{width:730px;}
+.layout-990 .industryTopRig ul{height:208px;}
+.layout-990 .industryTopRig li{width:355px;}
+.layout-990 .industryRigLogo dd{margin:0 20px;}
+.layout-990 .industryRigLogo{padding:5px 5px 0;overflow:hidden;height:60px;}
+.layout-990 .companyList{width:454px;}
+.layout-990 .product ul{width:340px;overflow:hidden;height:92px;}
+.layout-990 .intro{padding:5px 0;font-size:12px;color:#282828;height:18px;-o-text-overflow:ellipsis;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+.layout-990 .adImg2{width:990px;margin:10px auto 0;}
+.layout-990 .industryList{width:1000px;}
+.layout-990 .industryListCon{width:490px;}
+.layout-990 .industryListRig{width:278px;}
+.layout-990 .industryListPro li{padding:0 6px;}
+.layout-990 .industryListPro ul{height:204px;overflow:hidden;}
+.layout-990 .industryListLogo dd{padding:0 6px;background:#f2f7f7;}
+.layout-990 .industryListLogo{height:44px;overflow:hidden;}
+.layout-990 .adImgBox{width:990px;}
+.layout-990 .adImgBox .adImg3,.layout-990 .adImgBox .adImg4{width:490px;}
+.layout-990 .hcttConLeft{width:720px;}
+.layout-990 .ttCon{width:430px}
+.layout-990 .ttCon dd{height:36px;overflow:hidden;}
+.layout-990 .adImgBox2{width:990px;}
+.layout-990 .adImg6{width:390px}
+.layout-990 .exhibitionBox,.layout-990 .videoBox{width:490px;}
+.layout-990 .exhibitionCon,.layout-990 .videoCon{width:470px;height:220px;}
+.layout-990 .videoCon li,.layout-990 .exhibitionCon li{width:146px;height:146px;overflow:hidden;}
+.layout-990 .exhibitionImg,.layout-990 .videoImg{width:147px;height:147px;}
+.layout-990 .exhibitionImg img, .layout-990 .videoImg img{width:147px;height:147px;}
+.layout-990 .exhibitionImg .info{width:147px;height:147px;}
+.layout-990 .exhibitionImg h5{left:20px;right:20px;font-size:14px;color:#fff;top:28px;z-index:6;position:absolute;line-height:18px;height:36px;overflow:hidden;}
+.layout-990 .exhibitionImg p{color:#fff;position:absolute;left:20px;right:20px;top:75px;z-index:6;font-size:14px;font-size:12px;line-height:18px;}
+.layout-990 .videoImg .info{width:147px;height:147px;}
+.layout-990 .hcService{width:990px;}
+.layout-990 .serviceRig{padding-left:100px;}
+.layout-990 .weblinkTxt{width:990px;}
+.layout-990 .webLink em{padding:0 10px;}
+.layout-990 .l_sidebar_wrap{display:none !important;}
+.layout-990 .setUpAlert{width:988px;}
+.layout-990 .setUpAlert dl dd{width:113px;}
+.layout-990 .setUpAlert dl{padding: 18px 0 10px;}
+.layout-990 .headerCon{width:990px;}
+.layout-990 .h_search{padding:24px 0 0 20px;width:520px;}
+.layout-990 .headerRigBtn a{width:110px;}
+.layout-990 .logo_search_l .txt_key{width:309px;}
+.layout-990 .logo_search_l{width:418px;}
+.layout-990 .SearchWrap{width:520px;}
+.layout-990 .SearchWrap_cont{width:430px}
+.layout-990 .h_search .SearchWrap_record{width:390px}
+.sideBarRig ul li img{width:128px;height:58px}
+body.layout-990{min-width:990px;}
+.layout-990 .H_sideBar_list{width:781px;}
+.banneModBot .activityImg em,.adImg2 em,.industryAd em{position:absolute;z-index:60;width:30px;height:18px;line-height:18px;text-align:center;color:#fff;background:#333;filter:alpha(opacity=30);-moz-opacity:.3;-khtml-opacity:.3;opacity:.3;border-radius:3px;left:0;bottom:0;}
+.banneModBot .activityImg{position:relative;overflow:hidden;}
+.industryListLogo dd{overflow:hidden;}
+.industryListLogo dd a img,.banneModBot .activityImg a img{-webkit-transition:all .5s ease 0s;-moz-transition:all .5s ease 0s;-o-transition:all .5s ease 0s;transition:all .5s ease 0s;}
+.industryListLogo dd a:hover img,.banneModBot .activityImg a:hover img{-webkit-transform:scale(1.05);-moz-transform:scale(1.05);-o-transform:scale(1.05);transform:scale(1.05)}
+.toolbarRig ul li:hover .navCon{display:block;}
+.toolbarRig ul li:hover .navTitle a{background-position:51px -30px;}
+.unitBox{height:32px;width:75px;border:none;position:relative;margin-bottom:10px;color:#6d6d6e;float:right;z-index:4;}
+.unitBox input{height:32px;background:none;width:65px;line-height:32px;padding-left:6px;color:#6d6d6e;}
+.unitBox em{display:block;position:absolute;right:0;top:0;height:32px;width:32px;background:url(https://style.org.hc360.com/images/Nindex/news2019/icon.png) 12px -109px no-repeat;}
+.grab-space{width:100%;height:88px;z-index:999;}
+.grab-space.bounce-out .headerBox{width:100%;background-color:rgba(255,255,255,0.95);box-shadow:0 0 6px rgba(0,0,0,.3);position:fixed;top:0;left:0;transition:.8s;z-index:999;}
+.botRegFixed{background:url(https://style.org.hc360.com/images/Nindex/news2017/botImgFixed.png) 50%;height:93px;position:fixed;bottom:0;left:0;width:100%;z-index:500;}
+.botRegFixed a.regBtn{display:block;cursor:pointer;position:absolute;left:50%;width:190px;height:50px;bottom:20px;margin-left:314px}
+.botRegFixed a.closeBtn{position:absolute;left:50%;cursor:pointer;margin-left:570px;height:24px;width:23px;background:#fff;font-size:18px;text-align:center;line-height:22px;color:#e53b41;border-radius:50%;bottom:65px;padding-left:1px;line-height:24px;}
+.botRegFixed em{position:absolute;width:26px;height:18px;line-height:18px;text-align:center;color:#fff;background:#333;filter:alpha(opacity=30);-moz-opacity:.3;-khtml-opacity:.3;opacity:.3;border-radius:3px;left:0;bottom:0;z-index:5;}
+.show-select em{background:url(https://style.org.hc360.com/images/Nindex/news2019/icon.png) -33px -109px no-repeat #ebeaef;}
+.show-select ul{display:block!important;box-shadow: 0 0 5px rgba(0,0,0,0.1);}
+.rigAnBtn{display:none;}
+.r_sidebar.r_sidebarHide{background:none}
+.r_sidebar.r_sidebarHide .client_ico,.r_sidebar.r_sidebarHide .shop_ico,.r_sidebar.r_sidebarHide .user_ico{display:none}
+.r_sidebar.r_sidebarHide #backtop{margin-top:1px}
+.r_sidebar.r_sidebarHide .rigCloseBtn{display:none}
+.r_sidebar.r_sidebarHide .rigAnBtn{display:block}
+.r_sidebar.r_sidebarHide .r_sidebar_con{position:absolute;top:35%;left:0;width:35px;margin-top:200px}
+.listCon ul{width:100%;height:100%;position:relative;opacity:0;transition:.5s;}
+.visible ul{opacity:1;}
+.product li a:hover .proInfo{top:0;}
+.exhibitionImg a:hover .info{top:0;}
+.rigSeleCon .rigSeleCon:focus{border:1px solid #d94536;}
+.l_sidebar_wrap a em{display:none;width:11px;height:16px;position:absolute;background:url(https://style.org.hc360.com/images/Nindex/news2019/icon.png) 0 -334px;left:-18px;top:20px;}
+.l_sidebar_wrap a.redLink em{display:block;}
+.industryAd{position:relative;overflow:hidden;height:160px;margin-top:10px;width:1190px;}
+@keyframes myfirst3{0%{height:0}to{height:230px}}
+@keyframes myfirst2{0%{margin-top:30px;filter:alpha(opacity=0);-moz-opacity:0;opacity:0}to{margin-top:0;filter:alpha(opacity=100);-moz-opacity:1;opacity:1}}
+.layout-990 .tabBoxList{width:990px;}
+::-webkit-input-placeholder {color:#959595;}
+::-moz-placeholder {color:#959595;}
+:-ms-input-placeholder {color:#959595;}
+:-moz-placeholder {color:#959595;}
+.ScrLeft,.ScrRight{position:absolute;top:150px;display:block;width:36px;height:66px;display:none;z-index:120;opacity:.2;filter:Alpha(opacity=20);background:url(https://style.org.hc360.com/images/Nindex/news2016/indexicon.png) no-repeat #000;}
+.ScrLeft{left:50%;margin-left:-395px;background-position:0 -240px;}
+.ScrRight{left:50%;margin-left:359px;background-position:-37px -240px;}
+a.ScrLeft:hover,a.ScrRight:hover{background-color:#000;opacity:.4;filter:Alpha(opacity=40)}
+.layout-990 .ScrLeft{left:50%;margin-left:-295px;background-position:0 -240px;}
+.layout-990 .ScrRight{left:50%;margin-left:259px;background-position:-37px -240px;}
+.videoBox .violetTit{border-left:5px solid #661e6a;}
+.videoBox .boxTitle.violetTit em{background:#661e6a;margin-top:25px;}
+.charRig li a:hover h4,.charRig li a:hover p{color:#d94536;transition:.3s;}
+.layout-990 .mad_bx li.cur img.left-img{left: -50px;top:0;opacity:1;z-index:5;}
+.layout-990 .mad_bx li.cur img.right-img{right: 50px;top:0;opacity:1;z-index:4;}
+.layout-990 .mad_bx li.cur img.main-img{opacity:1;z-index:3;left: -50px;}
+input.error::-webkit-input-placeholder {color:#d94536;}
+input.error::-moz-placeholder {color:#d94536;}
+input.error:-ms-input-placeholder {color:#d94536;}
+input.error:-moz-placeholder {color:#d94536;}
+.purchaseRig input:hover::-webkit-input-placeholder,.rigSeleCon input:hover::-webkit-input-placeholder{color:#282828;}
+.purchaseRig input:hover::-moz-placeholder,.rigSeleCon input:hover::-moz-placeholder {color:#282828;}
+.purchaseRig input:hover:-ms-input-placeholder,.rigSeleCon input:hover:-ms-input-placeholder {color:#282828;}
+.purchaseRig input:hover:-moz-placeholder,.rigSeleCon input:hover:-moz-placeholder {color:#282828;}
+.htyImgCon a:hover,.htyImgCon a:hover h4,.htyImgCon a:hover p,.industryLeftCon a:hover,.industryLeftCon a:hover h4,.industryLeftCon a:hover p{opacity:0.92;}
+.recommendInfo dd.recommendBtn a:hover{background:#dd574b;}
+.tabBoxCon ul li.setUp:hover{color:#dd574b;}
+.hcttTitle a:hover,.botTitle a:hover,.redTit a:hover,.l_sidebar_wrap a.goodProLink:hover{opacity:.92;}
+.tabBoxCon ul li.setUp:hover{color:#fff;opacity: .9;}
+.setUpAlert dl dd span:hover{ opacity:0.85; font-size:12px;}
+.setUpAlert dl dd.sCurrent span:hover{opacity:1;}
+.toolbarBox .regAlert em{background: url(https://style.org.hc360.com/images/Nindex/news2019/icon.png) -8px 0;display: block;position: absolute;left: 8px;top: -4px;width: 14px;height: 4px;}
+.regAlert a:hover{opacity:0.92; color:#fff !important;}
+.H_Bside_UList{height:486px;}
+.mad_bx li.cur{ z-index:5;}
+.adImg1Con{width:1190px; margin:0 auto; height:80px;}
+.layout-990 .adImg1Con{width:990px;}
+.industryBox{overflow: initial;}
+.regAlert span{display: block; width: 11px; height: 11px; background: url(https://style.org.hc360.com/images/Nindex/news2019/icon.png) -10px -249px; position: absolute; right: 10px; top: 6px; cursor: pointer;}
+@media screen and (max-width:1360px){
+    .l_sidebar_wrap{display: none !important;}
+}
+.layout-990 .charRig li img,.layout-990 .industryListPro li img{margin-left: 7px;}
+.icon-hangyehuoyuaniconzuixin--2{margin: 0 13px 0 21px !important;}
+.industryListLogo dd a{ display: table-cell; vertical-align: middle; text-align: center; height: 44px; width: 116px; }
+.charRig3 li a{ display: table-cell; width: 116px; height: 60px; text-align: center; margin: 0 auto; }

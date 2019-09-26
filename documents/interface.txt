@@ -1,0 +1,11 @@
+获取昨天点击量最高的关键词数据接口：
+//champion.hc360.com/champion/p4p/getYesterdayClickTop.html  
+method: get,post
+return: String
+
+生成首页的CMS账号：
+cms.info.hc360.com
+杨利青
+shejibu
+
+测试首页地址：//www.hc360.com/indextest/news_IndexT1.htm

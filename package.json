@@ -13,7 +13,7 @@
     "JSON2": "^0.1.0",
     "es5-shim": "^4.5.9",
     "ismobilejs": "^0.4.1",
-    "jquery": "1.9.1",
+    "jquery": "3.5.0",
     "jquery-lazyload": "^1.9.7",
     "jquery-placeholder": "^2.3.1",
     "js-cookie": "^2.1.4",
